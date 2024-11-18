@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End 2 Eindopdracht</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/main.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="newLeftCard">
+            <div class="title">Safetylock</div>
+            <div class="input-group">
+                <label for="newUrl">URL / Naam:</label>
+                <input type="text" id="newUrl">
+            </div>
+            <div class="input-group">
+                <label for="newPassword">Wachtwoord:</label>
+                <input type="password" id="newPassword">
+            </div>
+            <button class="btn add-btn" onclick="addToRightCard()">Toevoegen</button>
+        </div>
+
+        <div class="card" id="newRightCard">
+            <button class="btn show-btn" id="newShowAllBtn" onmousedown="showAllPasswords()"
+                onmouseup="hideAllPasswords()">Show All</button>
+        </div>
+    </div>
+    <button class="btn" id="newReverseBtn" onclick="reverseCards()">Omdraaien</button>
+
+</body>
+
+</html>
